@@ -1,0 +1,128 @@
+<head>
+    <style>
+ body{
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+
+.container{
+  margin: auto;
+  background-color: white;
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+  padding-bottom: 30%;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(155, 155, 155, 0.7);
+    color:black
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+  
+        <ul class="slider">
+          <li id="slide1">
+            <img src="https://cdn-3.expansion.mx/dims4/default/7016ef4/2147483647/strip/true/crop/1402x789+0+0/resize/1200x675!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fca%2F36%2F1113a03b4a7e8066c92ccf70702e%2Fsupermariomovie.jpeg"/>
+  <div class="centrado">Super Mario Bros. La Película llegará a plataformas digitales esta misma semana</div>
+          </li>
+          <li id="slide2">
+            <img src="https://img.asmedia.epimg.net/resizer/NbQWHsg_utEluQVb3FrxXccT2hQ=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CIRAKXRYXVFTRPL54WBMYZXQOI.jpg"/>
+            <div class="centrado">'Guardianes de la Galaxia 3' rompe la mala racha de Marvel con un segundo fin de semana de récord </div>
+          </li>
+          <li id="slide3">
+            <img src="https://www.loslunesseriefilos.com/wp-content/uploads/2023/03/critica-john-wick-4.jpg"/>
+            <div class="centrado">Chad Stahelski cree que finalmente no habrá John Wick 5</div>
+          </li>
+          <li id="slide4">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzJjZDdiMTUtNDRhOS00MGIzLWE3ZjAtZTRjMTk2ZDBlYWU5XkEyXkFqcGdeQWFkcmllY2xh._V1_.jpg"/>
+            <div class="centrado">“Barbie”: fecha de estreno, argumento, reparto y tráiler de la cinta </div>
+          </li>
+        </ul>
+        
+        <ul class="menu">
+          <li>
+            <a href="#slide1">1</a>
+          </li>
+          <li>
+            <a href="#slide2">2</a>
+          </li>
+           <li>
+            <a href="#slide3">3</a>
+          </li>
+          <li>
+            <a href="#slide4">4</a>
+          </li>
+        </ul>
+        
+      </div>
+</body>
